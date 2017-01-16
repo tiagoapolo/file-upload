@@ -3,7 +3,7 @@ var fileUpload = require('express-fileupload');
 var app = express();
 var bodyParser= require('body-parser');
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 3000);
 // default options
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
