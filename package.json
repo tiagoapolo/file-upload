@@ -1,0 +1,18 @@
+{
+  "name": "formidable",
+  "description": "A node.js module for parsing form data, especially file uploads.",
+  "homepage": "https://github.com/felixge/node-formidable",
+  "license": "MIT",
+  "version": "1.1.1",
+  "devDependencies": {
+
+  },
+  "optionalDependencies": {},
+  "dependencies": {
+    "socketio-file-upload": "^0.6.0",
+    "express": "^4.11.2",
+    "body-parser": "^1.11.0",
+    "bcrypt-nodejs": "0.0.3",
+    "express-fileupload":""
+  }
+}
