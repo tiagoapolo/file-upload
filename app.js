@@ -5,6 +5,11 @@ var bodyParser= require('body-parser');
 
 app.set('port', process.env.PORT || 3000);
 // default options
+app.use(function(req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader('Access-Control-Allow-Headers', 'my-header,X-Requested-With,content-type,Authorization,cache-control');
+  next();
+});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -13,7 +18,6 @@ app.use(fileUpload());
 app.use(express.static(__dirname + "/public"))
 
 var router = express.Router();
-
 
 router.post('/upload', function(req, res) {
 

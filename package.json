@@ -1,9 +1,9 @@
 {
-  "name": "formidable",
-  "description": "A node.js module for parsing form data, especially file uploads.",
+  "name": "uploadr-contax",
+  "description": "A node.js app for parsing form data, especially file uploads.",
   "homepage": "https://github.com/felixge/node-formidable",
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.0.1",
   "devDependencies": {
 
   },
